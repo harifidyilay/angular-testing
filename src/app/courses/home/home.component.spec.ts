@@ -91,7 +91,6 @@ describe("HomeComponent", () => {
     fixture.detectChanges();
 
     const tabs = el.queryAll(By.css(".mat-mdc-tab"));
-    console.log(tabs[1].nativeElement.outerHTML);
     click(tabs[1]);
     fixture.detectChanges();
 
@@ -99,7 +98,6 @@ describe("HomeComponent", () => {
       const cardTitles = el.queryAll(By.css(".mat-mdc-card-title"));
       expect(cardTitles.length).toBeGreaterThan(0, "Card titles not found");
       console.log(["cardTitles", cardTitles.length]);
-      console.log(cardTitles[0].nativeElement.outerHTML);
       // expect(cardTitles[0].nativeElement.textContent).toContain(
       //   "Angular Security Course"
       // );
